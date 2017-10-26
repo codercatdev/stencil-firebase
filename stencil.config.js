@@ -1,8 +1,7 @@
 exports.config = {
   bundles: [
     { components: ['ajonp-firebase-auth-demo',] },
-    { components: ['ajonp-firebase-app-script',] },
-    { components: ['ajonp-firebase-auth-script',] },
+    { components: ['ajonp-firebase-app',] },
     { components: ['ajonp-firebase-auth',] },
   ],
   collections: [

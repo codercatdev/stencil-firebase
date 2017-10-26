@@ -8,29 +8,99 @@ import '@stencil/router';
 
 import '@ionic/core';
 
-import { drinkpublic as AjonpDrinkpublic } from './components/ajonp-drinkpublic/ajonp-drinkpublic';
+import { AjonpFirebaseApp as AjonpFirebaseApp } from './components/ajonp-firebase-app/ajonp-firebase-app';
 
-interface HTMLAjonpDrinkpublicElement extends AjonpDrinkpublic, HTMLElement {
+interface HTMLAjonpFirebaseAppElement extends AjonpFirebaseApp, HTMLElement {
 }
-declare var HTMLAjonpDrinkpublicElement: {
-  prototype: HTMLAjonpDrinkpublicElement;
-  new (): HTMLAjonpDrinkpublicElement;
+declare var HTMLAjonpFirebaseAppElement: {
+  prototype: HTMLAjonpFirebaseAppElement;
+  new (): HTMLAjonpFirebaseAppElement;
 };
 declare global {
   interface HTMLElementTagNameMap {
-      "ajonp-drinkpublic": HTMLAjonpDrinkpublicElement;
+      "ajonp-firebase-app": HTMLAjonpFirebaseAppElement;
   }
   interface ElementTagNameMap {
-      "ajonp-drinkpublic": HTMLAjonpDrinkpublicElement;
+      "ajonp-firebase-app": HTMLAjonpFirebaseAppElement;
   }
   namespace JSX {
       interface IntrinsicElements {
-          "ajonp-drinkpublic": JSXElements.AjonpDrinkpublicAttributes;
+          "ajonp-firebase-app": JSXElements.AjonpFirebaseAppAttributes;
       }
   }
   namespace JSXElements {
-      export interface AjonpDrinkpublicAttributes extends HTMLAttributes {
+      export interface AjonpFirebaseAppAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
         
+          apiKey?: string,
+          authDomain?: string,
+          databaseURL?: string,
+          projectId?: string,
+          storageBucket?: string,
+          messagingSenderId?: string
+      }
+  }
+}
+
+import { AjonpFirebaseAuthDemo as AjonpFirebaseAuthDemo } from './components/ajonp-firebase-auth-demo/ajonp-firebase-auth-demo';
+
+interface HTMLAjonpFirebaseAuthDemoElement extends AjonpFirebaseAuthDemo, HTMLElement {
+}
+declare var HTMLAjonpFirebaseAuthDemoElement: {
+  prototype: HTMLAjonpFirebaseAuthDemoElement;
+  new (): HTMLAjonpFirebaseAuthDemoElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ajonp-firebase-auth-demo": HTMLAjonpFirebaseAuthDemoElement;
+  }
+  interface ElementTagNameMap {
+      "ajonp-firebase-auth-demo": HTMLAjonpFirebaseAuthDemoElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ajonp-firebase-auth-demo": JSXElements.AjonpFirebaseAuthDemoAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface AjonpFirebaseAuthDemoAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+      }
+  }
+}
+
+import { AjonpFirebaseAuth as AjonpFirebaseAuth } from './components/ajonp-firebase-auth/ajonp-firebase-auth';
+
+interface HTMLAjonpFirebaseAuthElement extends AjonpFirebaseAuth, HTMLElement {
+}
+declare var HTMLAjonpFirebaseAuthElement: {
+  prototype: HTMLAjonpFirebaseAuthElement;
+  new (): HTMLAjonpFirebaseAuthElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "ajonp-firebase-auth": HTMLAjonpFirebaseAuthElement;
+  }
+  interface ElementTagNameMap {
+      "ajonp-firebase-auth": HTMLAjonpFirebaseAuthElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "ajonp-firebase-auth": JSXElements.AjonpFirebaseAuthAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface AjonpFirebaseAuthAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          signInWithRedirect?: any,
+          id?: string,
+          user?: string,
+          provider?: string
       }
   }
 }

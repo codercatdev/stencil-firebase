@@ -1,5 +1,5 @@
 # drinkpublic-webcomponents
-Drink Public - Web Components
+AJONP Firebase Stencil - Web Components
 
 # Prerequisites
 npm install -g firebase-tools
